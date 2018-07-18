@@ -1,9 +1,7 @@
 import re
 
-
 class AuthSystem:
 
-    
     def __init__(self):
         """Define regex"""
         self.username_regex = re.compile(r'[A-Z][a-z][a-z]')
@@ -46,8 +44,5 @@ elif len(b)>9 or len(b)<9:
         print('Password legnth error! Your password length is'+' '+ str(len(b))+'.')
 else:
     auth.authenticate(a, b)    
-# Construct a object of type AuthSystem
 
-
-# authenticate the user's credentials
 
